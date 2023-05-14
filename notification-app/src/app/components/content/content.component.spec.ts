@@ -62,7 +62,7 @@ describe('ContentComponent', () => {
     expect(component.carregarNotificacoes).toHaveBeenCalled();
   });
 
-  xit('carregarNotificacoes - Should return values to listaDeNotificacoes with success', () =>{
+  it('carregarNotificacoes - Should return values to listaDeNotificacoes with success', () =>{
     notificationService.getNotifications.and.returnValue(of(NOTIFICATIONS_MOCK));  
   
     component.carregarNotificacoes(); 
